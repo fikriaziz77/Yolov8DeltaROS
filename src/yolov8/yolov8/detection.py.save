@@ -1,0 +1,139 @@
+import rclpy # Python library for ROS 2
+from rclpy.node import Node # Handles the creation of nodes
+from sensor_msgs.msg import Image # Image is the message type
+import cv2
+from cv_bridge import CvBridge # Package to convert between ROS and OpenCV Images
+
+from ultralytics import YOLO
+import math, time
+import numpy as np
+import torch
+
+from std_msgs.msg import Float32MultiArray
+
+class ImageSubscriber(Node):
+  """
+  Create an ImageSubscriber class, which is a subclass of the Node class.
+  """
+  def __init__(self):
+    """
+    Class constructor to set up the node
+    """
+    # Initiate the Node class's constructor and give it a name
+    super().__init__('detection')
+    torch.cuda.set_device(0)
+    self.model = YOLO("/home/jetson/ros2_ws/src/yolov8/model/weights/3000pics - 100x35.pt")
+    self.prev_time = 0
+    self.curr_time = 0
+    self.frame_count = 0
+    self.fps = 0
+    self.font = cv2.FONT_HERSHEY_PLAIN
+    self.color = (255,0,0)
+    self.run_prog = True
+
+    self.x = 0.0
+    self.y = 0.0
+    self.r = 0.0
+      
+    # Create the subscriber. This subscriber will receive an Image
+    # from the video_frames topic. The queue size is 10 messages.
+    self.subscription = self.create_subscription(
+      Image, 
+      'image_raw', 
+      self.listener_callback, 
+      10)
+    self.subscription # prevent unused variable warning
+
+    self.publisher = self.create_publisher(Float32MultiArray, 'bbox_data', 1)
+      
+    # Used to convert between ROS and OpenCV images
+    self.br = CvBridge()
+   
+  def listener_callback(self, data):
+    """
+    Callback function.
+    """
+    # Display the message on the console
+    self.get_logger().info('Receiving video frame')
+ 
+    # Convert ROS Image message to OpenCV image
+    frame = self.br.imgmsg_to_cv2(data, "bgr8")
+    results = self.model.predict(frame, imgsz=640, conf=0.5, device='0')
+    result = results[0]
+    box = result.obb
+    msg = Float32MultiArray()
+    if result:
+            for box in result.obb:
+                class_id = result.names[box.cls[0].item()]
+                cords = box.xywhr[0].tolist()
+                cords_corner = box.xyxyxyxy[0].tolist()
+                conf = round(box.conf[0].item(), 2)
+
+                px1 = int(cords_corner[0][0])
+                py1 = int(cords_corner[0][1])
+                cv2.circle(frame, (px1,py1), 2, (0,0,255), 2)
+
+                px2 = int(cords_corner[1][0])
+                py2 = int(cords_corner[1][1])
+                cv2.circle(frame, (px2,py2), 2, (0,255,0), 2)
+
+                x = round(cords[0],2)
+                y = round(cords[1],2)
+                w = round(cords[2])
+                h = round(cords[3])
+                val = cords[4]
+
+                r = round(math.degrees(val),2)
+                rect = ((int(x), int(y)), (int(w), inth), r)
+                box = cv2.boxPoints(rect) 
+                box = np.int0(box)
+                cv2.drawContours(frame,[box],0,self.color,1)
+                cv2.putText(frame, f"{x},{y},{r}",(2,2), cv2.FONT_HERSHEY_PLAIN, 1, (0,0,0), 2)
+
+                msg.data = [x, y, w, h, r]  # Example array of float32 values
+
+    else:
+            x = 0
+            y = 0
+            r = 0.0
+
+            msg.data = [-1.0, -1.0, -1.0, -1.0, -1.0]  # Example array of float32 values
+    self.publisher.publish(msg)
+
+    # Calculate FPS
+    self.curr_time = time.time()
+    self.frame_count += 1
+    if self.curr_time - self.prev_time >= 1:
+        self.fps = self.frame_count / (self.curr_time - self.prev_time)
+        self.frame_count = 0
+        self.prev_time = self.curr_time
+
+    fps_text = f"FPS: {int(self.fps)}"
+    cv2.putText(frame, fps_text, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, self.color, 2)
+    
+    # Display image
+    cv2.imshow("camera fps", frame)
+    
+    cv2.waitKey(1)
+  
+def main(args=None):
+  
+  # Initialize the rclpy library
+  rclpy.init(args=args)
+  
+  # Create the node
+  image_subscriber = ImageSubscriber()
+  
+  # Spin the node so the callback function is called.
+  rclpy.spin(image_subscriber)
+  
+  # Destroy the node explicitly
+  # (optional - otherwise it will be done automatically
+  # when the garbage collector destroys the node object)
+  image_subscriber.destroy_node()
+  
+  # Shutdown the ROS client library for Python
+  rclpy.shutdown()
+  
+if __name__ == '__main__':
+  main()

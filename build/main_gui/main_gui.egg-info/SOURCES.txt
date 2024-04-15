@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+main_gui/__init__.py
+main_gui/main.py
+main_gui.egg-info/PKG-INFO
+main_gui.egg-info/SOURCES.txt
+main_gui.egg-info/dependency_links.txt
+main_gui.egg-info/entry_points.txt
+main_gui.egg-info/requires.txt
+main_gui.egg-info/top_level.txt
+main_gui.egg-info/zip-safe
+resource/main_gui

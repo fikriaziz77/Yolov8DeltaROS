@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating main_gui.egg-info
+writing main_gui.egg-info/PKG-INFO
+writing dependency_links to main_gui.egg-info/dependency_links.txt
+writing entry points to main_gui.egg-info/entry_points.txt
+writing requirements to main_gui.egg-info/requires.txt
+writing top-level names to main_gui.egg-info/top_level.txt
+writing manifest file 'main_gui.egg-info/SOURCES.txt'
+reading manifest file 'main_gui.egg-info/SOURCES.txt'
+writing manifest file 'main_gui.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jetson/ros2_ws/install/main_gui/lib/python3.8/site-packages/main-gui.egg-link (link to .)
+Installing main script to /home/jetson/ros2_ws/install/main_gui/lib/main_gui
+
+Installed /home/jetson/ros2_ws/build/main_gui
+running symlink_data
+creating /home/jetson/ros2_ws/install/main_gui/share/ament_index
+creating /home/jetson/ros2_ws/install/main_gui/share/ament_index/resource_index
+creating /home/jetson/ros2_ws/install/main_gui/share/ament_index/resource_index/packages
+symbolically linking /home/jetson/ros2_ws/build/main_gui/resource/main_gui -> /home/jetson/ros2_ws/install/main_gui/share/ament_index/resource_index/packages
+symbolically linking /home/jetson/ros2_ws/build/main_gui/package.xml -> /home/jetson/ros2_ws/install/main_gui/share/main_gui

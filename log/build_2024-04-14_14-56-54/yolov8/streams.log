@@ -1,0 +1,24 @@
+[4.333s] Invoking command in '/home/jetson/ros2_ws/build/yolov8': PYTHONPATH=/home/jetson/ros2_ws/build/yolov8/prefix_override:/home/jetson/ros2_ws/install/yolov8/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jetson/ros2_ws/build/yolov8/build --no-deps symlink_data
+[5.691s] running develop
+[6.440s] running egg_info
+[6.440s] creating yolov8.egg-info
+[6.441s] writing yolov8.egg-info/PKG-INFO
+[6.441s] writing dependency_links to yolov8.egg-info/dependency_links.txt
+[6.442s] writing entry points to yolov8.egg-info/entry_points.txt
+[6.442s] writing requirements to yolov8.egg-info/requires.txt
+[6.443s] writing top-level names to yolov8.egg-info/top_level.txt
+[6.448s] writing manifest file 'yolov8.egg-info/SOURCES.txt'
+[6.454s] reading manifest file 'yolov8.egg-info/SOURCES.txt'
+[6.456s] writing manifest file 'yolov8.egg-info/SOURCES.txt'
+[6.616s] running build_ext
+[6.617s] Creating /home/jetson/ros2_ws/install/yolov8/lib/python3.8/site-packages/yolov8.egg-link (link to .)
+[6.621s] Installing detection script to /home/jetson/ros2_ws/install/yolov8/lib/yolov8
+[6.622s] 
+[6.623s] Installed /home/jetson/ros2_ws/build/yolov8
+[6.623s] running symlink_data
+[6.624s] creating /home/jetson/ros2_ws/install/yolov8/share/ament_index
+[6.625s] creating /home/jetson/ros2_ws/install/yolov8/share/ament_index/resource_index
+[6.625s] creating /home/jetson/ros2_ws/install/yolov8/share/ament_index/resource_index/packages
+[6.626s] symbolically linking /home/jetson/ros2_ws/build/yolov8/resource/yolov8 -> /home/jetson/ros2_ws/install/yolov8/share/ament_index/resource_index/packages
+[6.626s] symbolically linking /home/jetson/ros2_ws/build/yolov8/package.xml -> /home/jetson/ros2_ws/install/yolov8/share/yolov8
+[6.786s] Invoked command in '/home/jetson/ros2_ws/build/yolov8' returned '0': PYTHONPATH=/home/jetson/ros2_ws/build/yolov8/prefix_override:/home/jetson/ros2_ws/install/yolov8/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jetson/ros2_ws/build/yolov8/build --no-deps symlink_data

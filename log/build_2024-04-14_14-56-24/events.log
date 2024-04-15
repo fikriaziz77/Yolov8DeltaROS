@@ -1,0 +1,52 @@
+[0.000000] (-) TimerEvent: {}
+[0.000399] (serial_communication) JobQueued: {'identifier': 'serial_communication', 'dependencies': OrderedDict()}
+[0.000541] (yolov8) JobQueued: {'identifier': 'yolov8', 'dependencies': OrderedDict()}
+[0.000735] (serial_communication) JobStarted: {'identifier': 'serial_communication'}
+[0.036810] (yolov8) JobStarted: {'identifier': 'yolov8'}
+[0.097097] (-) TimerEvent: {}
+[0.197928] (-) TimerEvent: {}
+[0.298587] (-) TimerEvent: {}
+[0.399230] (-) TimerEvent: {}
+[0.499874] (-) TimerEvent: {}
+[0.600510] (-) TimerEvent: {}
+[0.701196] (-) TimerEvent: {}
+[0.801800] (-) TimerEvent: {}
+[0.902413] (-) TimerEvent: {}
+[1.003063] (-) TimerEvent: {}
+[1.103759] (-) TimerEvent: {}
+[1.204424] (-) TimerEvent: {}
+[1.308558] (-) TimerEvent: {}
+[1.409690] (-) TimerEvent: {}
+[1.510526] (-) TimerEvent: {}
+[1.611164] (-) TimerEvent: {}
+[1.711796] (-) TimerEvent: {}
+[1.812419] (-) TimerEvent: {}
+[1.913100] (-) TimerEvent: {}
+[2.013723] (-) TimerEvent: {}
+[2.114320] (-) TimerEvent: {}
+[2.214957] (-) TimerEvent: {}
+[2.315603] (-) TimerEvent: {}
+[2.416252] (-) TimerEvent: {}
+[2.517032] (-) TimerEvent: {}
+[2.617665] (-) TimerEvent: {}
+[2.718486] (-) TimerEvent: {}
+[2.819140] (-) TimerEvent: {}
+[2.919802] (-) TimerEvent: {}
+[3.020477] (-) TimerEvent: {}
+[3.121222] (-) TimerEvent: {}
+[3.221811] (-) TimerEvent: {}
+[3.322442] (-) TimerEvent: {}
+[3.423080] (-) TimerEvent: {}
+[3.523745] (-) TimerEvent: {}
+[3.624426] (-) TimerEvent: {}
+[3.725112] (-) TimerEvent: {}
+[3.825714] (-) TimerEvent: {}
+[3.926377] (-) TimerEvent: {}
+[4.027045] (-) TimerEvent: {}
+[4.127728] (-) TimerEvent: {}
+[4.228453] (-) TimerEvent: {}
+[4.283994] (serial_communication) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 75, in execute\n    loop.run_until_complete(future)\n  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete\n    self.run_forever()\n  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever\n    self._run_once()\n  File "/usr/lib/python3.8/asyncio/base_events.py", line 1823, in _run_once\n    event_list = self._selector.select(timeout)\n  File "/usr/lib/python3.8/selectors.py", line 468, in select\n    fd_event_list = self._selector.poll(timeout, max_ev)\nKeyboardInterrupt\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 102, in build\n    return await extension.build(additional_hooks=additional_hooks)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 90, in build\n    available_commands = await self._get_available_commands(\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 188, in _get_available_commands\n    output = await check_output(\n  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 129, in check_output\n    assert not rc, f\'Expected {args} to pass: {stderr_data}\'\nAssertionError: Expected [\'/usr/bin/python3\', \'-W\', \'ignore:setup.py install is deprecated\', \'setup.py\', \'--help-commands\'] to pass: /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated \'script-dir\' will not be supported in future versions. Please use the underscore name \'script_dir\' instead\n  warnings.warn(\n\n'}
+[4.286446] (serial_communication) JobEnded: {'identifier': 'serial_communication', 'rc': 'SIGINT'}
+[4.287505] (yolov8) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 75, in execute\n    loop.run_until_complete(future)\n  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete\n    self.run_forever()\n  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever\n    self._run_once()\n  File "/usr/lib/python3.8/asyncio/base_events.py", line 1823, in _run_once\n    event_list = self._selector.select(timeout)\n  File "/usr/lib/python3.8/selectors.py", line 468, in select\n    fd_event_list = self._selector.poll(timeout, max_ev)\nKeyboardInterrupt\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 102, in build\n    return await extension.build(additional_hooks=additional_hooks)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 90, in build\n    available_commands = await self._get_available_commands(\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 188, in _get_available_commands\n    output = await check_output(\n  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 129, in check_output\n    assert not rc, f\'Expected {args} to pass: {stderr_data}\'\nAssertionError: Expected [\'/usr/bin/python3\', \'-W\', \'ignore:setup.py install is deprecated\', \'setup.py\', \'--help-commands\'] to pass: \n'}
+[4.288739] (yolov8) JobEnded: {'identifier': 'yolov8', 'rc': 'SIGINT'}
+[4.297418] (-) EventReactorShutdown: {}

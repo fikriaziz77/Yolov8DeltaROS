@@ -1,0 +1,24 @@
+[5.749s] Invoking command in '/home/jetson/ros2_ws/build/main_gui': PYTHONPATH=/home/jetson/ros2_ws/build/main_gui/prefix_override:/home/jetson/ros2_ws/install/main_gui/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jetson/ros2_ws/build/main_gui/build --no-deps symlink_data
+[7.191s] running develop
+[7.979s] running egg_info
+[7.980s] creating main_gui.egg-info
+[7.981s] writing main_gui.egg-info/PKG-INFO
+[7.982s] writing dependency_links to main_gui.egg-info/dependency_links.txt
+[7.983s] writing entry points to main_gui.egg-info/entry_points.txt
+[7.984s] writing requirements to main_gui.egg-info/requires.txt
+[7.984s] writing top-level names to main_gui.egg-info/top_level.txt
+[7.986s] writing manifest file 'main_gui.egg-info/SOURCES.txt'
+[7.993s] reading manifest file 'main_gui.egg-info/SOURCES.txt'
+[7.995s] writing manifest file 'main_gui.egg-info/SOURCES.txt'
+[8.165s] running build_ext
+[8.167s] Creating /home/jetson/ros2_ws/install/main_gui/lib/python3.8/site-packages/main-gui.egg-link (link to .)
+[8.168s] Installing main script to /home/jetson/ros2_ws/install/main_gui/lib/main_gui
+[8.172s] 
+[8.173s] Installed /home/jetson/ros2_ws/build/main_gui
+[8.173s] running symlink_data
+[8.174s] creating /home/jetson/ros2_ws/install/main_gui/share/ament_index
+[8.174s] creating /home/jetson/ros2_ws/install/main_gui/share/ament_index/resource_index
+[8.175s] creating /home/jetson/ros2_ws/install/main_gui/share/ament_index/resource_index/packages
+[8.176s] symbolically linking /home/jetson/ros2_ws/build/main_gui/resource/main_gui -> /home/jetson/ros2_ws/install/main_gui/share/ament_index/resource_index/packages
+[8.176s] symbolically linking /home/jetson/ros2_ws/build/main_gui/package.xml -> /home/jetson/ros2_ws/install/main_gui/share/main_gui
+[8.377s] Invoked command in '/home/jetson/ros2_ws/build/main_gui' returned '0': PYTHONPATH=/home/jetson/ros2_ws/build/main_gui/prefix_override:/home/jetson/ros2_ws/install/main_gui/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jetson/ros2_ws/build/main_gui/build --no-deps symlink_data

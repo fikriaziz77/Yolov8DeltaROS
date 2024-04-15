@@ -1,0 +1,17 @@
+[5.724s] Invoking command in '/home/jetson/ros2_ws/build/yolov8': PYTHONPATH=/home/jetson/ros2_ws/build/yolov8/prefix_override:/home/jetson/ros2_ws/install/yolov8/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jetson/ros2_ws/build/yolov8/build --no-deps symlink_data
+[7.195s] running develop
+[7.997s] running egg_info
+[7.998s] writing yolov8.egg-info/PKG-INFO
+[7.998s] writing dependency_links to yolov8.egg-info/dependency_links.txt
+[7.999s] writing entry points to yolov8.egg-info/entry_points.txt
+[7.999s] writing requirements to yolov8.egg-info/requires.txt
+[8.000s] writing top-level names to yolov8.egg-info/top_level.txt
+[8.012s] reading manifest file 'yolov8.egg-info/SOURCES.txt'
+[8.015s] writing manifest file 'yolov8.egg-info/SOURCES.txt'
+[8.215s] running build_ext
+[8.216s] Creating /home/jetson/ros2_ws/install/yolov8/lib/python3.8/site-packages/yolov8.egg-link (link to .)
+[8.221s] Installing detection script to /home/jetson/ros2_ws/install/yolov8/lib/yolov8
+[8.222s] 
+[8.223s] Installed /home/jetson/ros2_ws/build/yolov8
+[8.223s] running symlink_data
+[8.362s] Invoked command in '/home/jetson/ros2_ws/build/yolov8' returned '0': PYTHONPATH=/home/jetson/ros2_ws/build/yolov8/prefix_override:/home/jetson/ros2_ws/install/yolov8/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jetson/ros2_ws/build/yolov8/build --no-deps symlink_data

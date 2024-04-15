@@ -1,0 +1,17 @@
+[5.738s] Invoking command in '/home/jetson/ros2_ws/build/serial_communication': PYTHONPATH=/home/jetson/ros2_ws/build/serial_communication/prefix_override:/home/jetson/ros2_ws/install/serial_communication/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jetson/ros2_ws/build/serial_communication/build --no-deps symlink_data
+[7.156s] running develop
+[7.942s] running egg_info
+[7.945s] writing serial_communication.egg-info/PKG-INFO
+[7.946s] writing dependency_links to serial_communication.egg-info/dependency_links.txt
+[7.946s] writing entry points to serial_communication.egg-info/entry_points.txt
+[7.947s] writing requirements to serial_communication.egg-info/requires.txt
+[7.948s] writing top-level names to serial_communication.egg-info/top_level.txt
+[7.957s] reading manifest file 'serial_communication.egg-info/SOURCES.txt'
+[7.960s] writing manifest file 'serial_communication.egg-info/SOURCES.txt'
+[8.129s] running build_ext
+[8.130s] Creating /home/jetson/ros2_ws/install/serial_communication/lib/python3.8/site-packages/serial-communication.egg-link (link to .)
+[8.133s] Installing send script to /home/jetson/ros2_ws/install/serial_communication/lib/serial_communication
+[8.134s] 
+[8.135s] Installed /home/jetson/ros2_ws/build/serial_communication
+[8.136s] running symlink_data
+[8.279s] Invoked command in '/home/jetson/ros2_ws/build/serial_communication' returned '0': PYTHONPATH=/home/jetson/ros2_ws/build/serial_communication/prefix_override:/home/jetson/ros2_ws/install/serial_communication/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jetson/ros2_ws/build/serial_communication/build --no-deps symlink_data

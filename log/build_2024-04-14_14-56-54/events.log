@@ -1,0 +1,124 @@
+[0.000000] (-) TimerEvent: {}
+[0.000399] (serial_communication) JobQueued: {'identifier': 'serial_communication', 'dependencies': OrderedDict()}
+[0.000542] (yolov8) JobQueued: {'identifier': 'yolov8', 'dependencies': OrderedDict()}
+[0.003107] (serial_communication) JobStarted: {'identifier': 'serial_communication'}
+[0.039560] (yolov8) JobStarted: {'identifier': 'yolov8'}
+[0.099291] (-) TimerEvent: {}
+[0.200212] (-) TimerEvent: {}
+[0.300867] (-) TimerEvent: {}
+[0.401522] (-) TimerEvent: {}
+[0.502146] (-) TimerEvent: {}
+[0.602773] (-) TimerEvent: {}
+[0.703455] (-) TimerEvent: {}
+[0.804052] (-) TimerEvent: {}
+[0.904661] (-) TimerEvent: {}
+[1.005352] (-) TimerEvent: {}
+[1.105986] (-) TimerEvent: {}
+[1.206673] (-) TimerEvent: {}
+[1.307632] (-) TimerEvent: {}
+[1.408607] (-) TimerEvent: {}
+[1.509264] (-) TimerEvent: {}
+[1.609901] (-) TimerEvent: {}
+[1.710533] (-) TimerEvent: {}
+[1.811165] (-) TimerEvent: {}
+[1.911787] (-) TimerEvent: {}
+[2.012393] (-) TimerEvent: {}
+[2.113031] (-) TimerEvent: {}
+[2.213684] (-) TimerEvent: {}
+[2.314331] (-) TimerEvent: {}
+[2.414977] (-) TimerEvent: {}
+[2.517250] (-) TimerEvent: {}
+[2.617929] (-) TimerEvent: {}
+[2.718771] (-) TimerEvent: {}
+[2.819450] (-) TimerEvent: {}
+[2.920063] (-) TimerEvent: {}
+[3.020736] (-) TimerEvent: {}
+[3.121425] (-) TimerEvent: {}
+[3.222055] (-) TimerEvent: {}
+[3.322686] (-) TimerEvent: {}
+[3.423305] (-) TimerEvent: {}
+[3.523907] (-) TimerEvent: {}
+[3.624576] (-) TimerEvent: {}
+[3.725232] (-) TimerEvent: {}
+[3.825872] (-) TimerEvent: {}
+[3.926545] (-) TimerEvent: {}
+[4.027176] (-) TimerEvent: {}
+[4.127786] (-) TimerEvent: {}
+[4.228439] (-) TimerEvent: {}
+[4.329262] (-) TimerEvent: {}
+[4.341156] (serial_communication) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/jetson/ros2_ws/build/serial_communication/build', '--no-deps', 'symlink_data'], 'cwd': '/home/jetson/ros2_ws/build/serial_communication', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.100.12 51316 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/ros2_ws/src/serial_communication', 'SSH_TTY': '/dev/pts/0', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_colcon_cd_root': '/opt/ros/foxy/', 'COLCON_PREFIX_PATH': '/home/jetson/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1425222004602', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'AMENT_PREFIX_PATH': '/home/jetson/ros2_ws/install/yolov8:/home/jetson/ros2_ws/install/serial:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/ros2_ws/build/serial_communication', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.100.12 51316 192.168.100.13 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/ros2_ws/build/serial_communication/prefix_override:/home/jetson/ros2_ws/install/serial_communication/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/yolov8:/home/jetson/ros2_ws/install/yolov8/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/serial:/home/jetson/ros2_ws/install/serial/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[4.366742] (yolov8) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/jetson/ros2_ws/build/yolov8/build', '--no-deps', 'symlink_data'], 'cwd': '/home/jetson/ros2_ws/build/yolov8', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.100.12 51316 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/ros2_ws/src/serial_communication', 'SSH_TTY': '/dev/pts/0', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_colcon_cd_root': '/opt/ros/foxy/', 'COLCON_PREFIX_PATH': '/home/jetson/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1425222004602', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'AMENT_PREFIX_PATH': '/home/jetson/ros2_ws/install/yolov8:/home/jetson/ros2_ws/install/serial:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/ros2_ws/build/yolov8', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.100.12 51316 192.168.100.13 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/ros2_ws/build/yolov8/prefix_override:/home/jetson/ros2_ws/install/yolov8/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/yolov8:/home/jetson/ros2_ws/install/yolov8/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/serial:/home/jetson/ros2_ws/install/serial/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[4.429541] (-) TimerEvent: {}
+[4.530295] (-) TimerEvent: {}
+[4.630985] (-) TimerEvent: {}
+[4.731649] (-) TimerEvent: {}
+[4.832315] (-) TimerEvent: {}
+[4.932968] (-) TimerEvent: {}
+[5.033601] (-) TimerEvent: {}
+[5.134237] (-) TimerEvent: {}
+[5.234907] (-) TimerEvent: {}
+[5.335573] (-) TimerEvent: {}
+[5.436204] (-) TimerEvent: {}
+[5.536851] (-) TimerEvent: {}
+[5.637519] (-) TimerEvent: {}
+[5.705967] (serial_communication) StdoutLine: {'line': b'running develop\n'}
+[5.730309] (yolov8) StdoutLine: {'line': b'running develop\n'}
+[5.737735] (-) TimerEvent: {}
+[5.838367] (-) TimerEvent: {}
+[5.939053] (-) TimerEvent: {}
+[6.039642] (-) TimerEvent: {}
+[6.140242] (-) TimerEvent: {}
+[6.240887] (-) TimerEvent: {}
+[6.341524] (-) TimerEvent: {}
+[6.442183] (-) TimerEvent: {}
+[6.455350] (serial_communication) StdoutLine: {'line': b'running egg_info\n'}
+[6.455923] (serial_communication) StdoutLine: {'line': b'creating serial_communication.egg-info\n'}
+[6.456564] (serial_communication) StdoutLine: {'line': b'writing serial_communication.egg-info/PKG-INFO\n'}
+[6.457126] (serial_communication) StdoutLine: {'line': b'writing dependency_links to serial_communication.egg-info/dependency_links.txt\n'}
+[6.457865] (serial_communication) StdoutLine: {'line': b'writing entry points to serial_communication.egg-info/entry_points.txt\n'}
+[6.458265] (serial_communication) StdoutLine: {'line': b'writing requirements to serial_communication.egg-info/requires.txt\n'}
+[6.458611] (serial_communication) StdoutLine: {'line': b'writing top-level names to serial_communication.egg-info/top_level.txt\n'}
+[6.463388] (serial_communication) StdoutLine: {'line': b"writing manifest file 'serial_communication.egg-info/SOURCES.txt'\n"}
+[6.469167] (serial_communication) StdoutLine: {'line': b"reading manifest file 'serial_communication.egg-info/SOURCES.txt'\n"}
+[6.471898] (serial_communication) StdoutLine: {'line': b"writing manifest file 'serial_communication.egg-info/SOURCES.txt'\n"}
+[6.478847] (yolov8) StdoutLine: {'line': b'running egg_info\n'}
+[6.479563] (yolov8) StdoutLine: {'line': b'creating yolov8.egg-info\n'}
+[6.480217] (yolov8) StdoutLine: {'line': b'writing yolov8.egg-info/PKG-INFO\n'}
+[6.480737] (yolov8) StdoutLine: {'line': b'writing dependency_links to yolov8.egg-info/dependency_links.txt\n'}
+[6.481193] (yolov8) StdoutLine: {'line': b'writing entry points to yolov8.egg-info/entry_points.txt\n'}
+[6.481654] (yolov8) StdoutLine: {'line': b'writing requirements to yolov8.egg-info/requires.txt\n'}
+[6.482018] (yolov8) StdoutLine: {'line': b'writing top-level names to yolov8.egg-info/top_level.txt\n'}
+[6.487155] (yolov8) StdoutLine: {'line': b"writing manifest file 'yolov8.egg-info/SOURCES.txt'\n"}
+[6.493126] (yolov8) StdoutLine: {'line': b"reading manifest file 'yolov8.egg-info/SOURCES.txt'\n"}
+[6.495767] (yolov8) StdoutLine: {'line': b"writing manifest file 'yolov8.egg-info/SOURCES.txt'\n"}
+[6.542383] (-) TimerEvent: {}
+[6.627583] (serial_communication) StdoutLine: {'line': b'running build_ext\n'}
+[6.628477] (serial_communication) StdoutLine: {'line': b'Creating /home/jetson/ros2_ws/install/serial_communication/lib/python3.8/site-packages/serial-communication.egg-link (link to .)\n'}
+[6.631501] (serial_communication) StdoutLine: {'line': b'Installing send script to /home/jetson/ros2_ws/install/serial_communication/lib/serial_communication\n'}
+[6.632493] (serial_communication) StdoutLine: {'line': b'\n'}
+[6.633064] (serial_communication) StdoutLine: {'line': b'Installed /home/jetson/ros2_ws/build/serial_communication\n'}
+[6.633631] (serial_communication) StdoutLine: {'line': b'running symlink_data\n'}
+[6.634404] (serial_communication) StdoutLine: {'line': b'creating /home/jetson/ros2_ws/install/serial_communication/share/ament_index\n'}
+[6.635003] (serial_communication) StdoutLine: {'line': b'creating /home/jetson/ros2_ws/install/serial_communication/share/ament_index/resource_index\n'}
+[6.635535] (serial_communication) StdoutLine: {'line': b'creating /home/jetson/ros2_ws/install/serial_communication/share/ament_index/resource_index/packages\n'}
+[6.636003] (serial_communication) StdoutLine: {'line': b'symbolically linking /home/jetson/ros2_ws/build/serial_communication/resource/serial_communication -> /home/jetson/ros2_ws/install/serial_communication/share/ament_index/resource_index/packages\n'}
+[6.636482] (serial_communication) StdoutLine: {'line': b'symbolically linking /home/jetson/ros2_ws/build/serial_communication/package.xml -> /home/jetson/ros2_ws/install/serial_communication/share/serial_communication\n'}
+[6.642635] (-) TimerEvent: {}
+[6.655536] (yolov8) StdoutLine: {'line': b'running build_ext\n'}
+[6.656527] (yolov8) StdoutLine: {'line': b'Creating /home/jetson/ros2_ws/install/yolov8/lib/python3.8/site-packages/yolov8.egg-link (link to .)\n'}
+[6.660019] (yolov8) StdoutLine: {'line': b'Installing detection script to /home/jetson/ros2_ws/install/yolov8/lib/yolov8\n'}
+[6.661072] (yolov8) StdoutLine: {'line': b'\n'}
+[6.661681] (yolov8) StdoutLine: {'line': b'Installed /home/jetson/ros2_ws/build/yolov8\n'}
+[6.662504] (yolov8) StdoutLine: {'line': b'running symlink_data\n'}
+[6.663244] (yolov8) StdoutLine: {'line': b'creating /home/jetson/ros2_ws/install/yolov8/share/ament_index\n'}
+[6.663856] (yolov8) StdoutLine: {'line': b'creating /home/jetson/ros2_ws/install/yolov8/share/ament_index/resource_index\n'}
+[6.664438] (yolov8) StdoutLine: {'line': b'creating /home/jetson/ros2_ws/install/yolov8/share/ament_index/resource_index/packages\n'}
+[6.664982] (yolov8) StdoutLine: {'line': b'symbolically linking /home/jetson/ros2_ws/build/yolov8/resource/yolov8 -> /home/jetson/ros2_ws/install/yolov8/share/ament_index/resource_index/packages\n'}
+[6.665537] (yolov8) StdoutLine: {'line': b'symbolically linking /home/jetson/ros2_ws/build/yolov8/package.xml -> /home/jetson/ros2_ws/install/yolov8/share/yolov8\n'}
+[6.742986] (-) TimerEvent: {}
+[6.769968] (serial_communication) CommandEnded: {'returncode': 0}
+[6.820301] (serial_communication) JobEnded: {'identifier': 'serial_communication', 'rc': 0}
+[6.824676] (yolov8) CommandEnded: {'returncode': 0}
+[6.844656] (-) TimerEvent: {}
+[6.850442] (yolov8) JobEnded: {'identifier': 'yolov8', 'rc': 0}
+[6.853094] (-) EventReactorShutdown: {}
